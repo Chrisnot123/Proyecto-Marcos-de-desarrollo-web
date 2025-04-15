@@ -15,9 +15,11 @@
 <header class="container-fluid border-bottom py-2">
     <div class="container d-flex justify-content-between align-items-center">
         <div>
-            <h2 class="mb-0 text-primary">Dinnra</h2>
+            <!-- Enlace a la página principal -->
+            <a href="index.html" class="text-decoration-none">
+                <h2 class="mb-0 text-primary">Dinnra</h2>
+            </a>
         </div>
-        <!-- Botones y menú -->
         <div class="d-flex align-items-center gap-3">
             <button class="btn btn-outline-primary btn-sm">Favoritos</button>
             <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#loginModal">
@@ -278,6 +280,30 @@
                             </div>
                         </a>
                     </div>
+                    <div class="col-md-3">
+                        <a href="offers.html" class="text-decoration-none">
+                            <div class="card">
+                                <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_258,q_auto,w_258/categoryimages/15/35/15353_v78.jpeg" class="card-img-top" alt="Paracas">
+                                <div class="card-body">
+                                    <h5 class="card-title">Aruba</h5>
+                                    <p class="text-muted">550 hoteles</p>
+                                    <p class="text-muted">S/ 779 prom.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="offers.html" class="text-decoration-none">
+                            <div class="card">
+                                <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_258,q_auto,w_258/categoryimages/66/62/66627_v72.jpeg" class="card-img-top" alt="Paracas">
+                                <div class="card-body">
+                                    <h5 class="card-title">Huaraz</h5>
+                                    <p class="text-muted">242 hoteles</p>
+                                    <p class="text-muted">S/ 186 prom.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -288,7 +314,7 @@
 <footer class="bg-light border-top py-4">
     <div class="container">
         <div class="row">
-            <!-- información -->
+            <!-- info -->
             <div class="col-md-4">
                 <h5 class="fw-bold">Dinnra</h5>
                 <p class="text-muted">Somos la mejor página de hoteles 💪</p>
@@ -300,7 +326,7 @@
                 <ul class="list-unstyled">
                     <li><a href="#" class="text-decoration-none text-muted">Acerca de nosotros</a></li>
                     <li><a href="#" class="text-decoration-none text-muted">Política de privacidad</a></li>
-                    <li><a href="#" class="text-decoration-none text-muted">Libro de reclamaciones</a></li>
+                    <li><a href="../html/librodereclamaciones.html" class="text-decoration-none text-muted">Libro de reclamaciones</a></li>
                     <li><a href="#" class="text-decoration-none text-muted">Términos y condiciones</a></li>
                     <li><a href="#" class="text-decoration-none text-muted">Contáctanos</a></li>
                 </ul>
@@ -316,10 +342,54 @@
                 </div>
             </div>
         </div>
+    </div>
+    <!-- Sugerencias -->
+<section id="sugerencias" class="py-5">
+    <div class="container bg-white shadow rounded p-4">
+        <div class="row">
+            <div class="col-md-5 d-flex flex-column align-items-start justify-content-center border-end">
+                <div class="mb-4">
+                    <i class="bi bi-geo-alt text-primary fs-3"></i>
+                    <h6 class="fw-bold mb-0">Dirección</h6>
+                    <p class="text-muted mb-0">Collique</p>
+                    <p class="text-muted">Lima</p>
+                </div>
+                <div class="mb-4">
+                    <i class="bi bi-telephone text-primary fs-3"></i>
+                    <h6 class="fw-bold mb-0">Teléfono</h6>
+                    <p class="text-muted mb-0">965874125</p>
+                    <p class="text-muted">960505452</p>
+                </div>
+                <div>
+                    <i class="bi bi-envelope text-primary fs-3"></i>
+                    <h6 class="fw-bold mb-0">Correo</h6>
+                    <p class="text-muted mb-0">U22222706@utp.edu.pe</p>
+                    <p class="text-muted">U222222706@utpvirtual.edu.pe</p>
+                </div>
+            </div>
+            <!-- Formulario de sugerencias -->
+            <div class="col-md-7">
+                <h5 class="fw-bold text-primary">Sugerencias</h5>
+                <p class="text-muted">Coloque sus sugerencias</p>
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control bg-light" placeholder="Nombre">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control bg-light" placeholder="Email">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control bg-light" rows="4" placeholder="Escriba su sugerencia aquí"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                </form>
+            </div>
+        </div>
         <div class="text-center mt-4">
             <p class="text-muted mb-0">&copy; 2025 Dinnra. Todos los derechos reservados.</p>
         </div>
     </div>
+</section>
 </footer>
 
 <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
